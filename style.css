@@ -127,6 +127,14 @@ nav {
     font-size: 60px;
 }
 
+.contact p {
+    font-size: 20px;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
 .info-wrapper {
     top: 35vh;
     right: 5vw;
