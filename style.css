@@ -1,27 +1,35 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    /* height: 200vh; */
-    font-family: 'Roboto', sans-serif;
-    /* min-width: 1000px; */
+    font-family: 'Open sans', sans-serif;
 }
 
-/* section,
-footer {
-    width: 80%;
-    max-width: 1600px;
+.wrapper {
+    /* max-width: 1400px; */
     margin: 0 auto;
-} */
+}
+
+p {
+    font-size: 18px;
+}
+
+h1 {
+    margin-top: 80px;
+    font-size: 60px;
+}
 
 /* Header Section */
 header {
     position: relative;
     height: 80vh;
-    background-image: url(img/img-bg-smaller.jpg);
+    background-image: url(img/header.jpeg);
+    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 
 }
@@ -47,11 +55,13 @@ nav {
     transform: translateY(-50%);
     font-size: 25px;
     color: #fff;
+
 }
 
-.phone i {
+.phone i,
+.phone p {
     margin-right: 15px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .buttons {
@@ -60,7 +70,7 @@ nav {
 
 .buttons button {
     margin: 10px 15px;
-    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     background-color: transparent;
@@ -68,7 +78,7 @@ nav {
     border-style: none;
     color: #fff;
     transition: 0.3s;
-    overflow: hidden;
+    border-bottom: 2px solid transparent;
 }
 
 .buttons button:hover {
@@ -79,6 +89,8 @@ nav {
 /* End Header Section */
 
 /* Offer Section */
+
+
 .offer {
     position: absolute;
     width: 80%;
@@ -87,23 +99,50 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    background-image: url(img/offer-img.jpeg);
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: 45%;
+    background-position: 85% 60%;
     border-radius: 3px;
     box-shadow: 0px 0px 15px 0px rgb(117, 116, 116);
-    background-color: rgb(255, 255, 255);
+}
+
+.offer h1,
+.offer h2,
+.offer p {
+    width: 50%;
+    margin-left: 50px;
 }
 
 .offer h1 {
-    margin-top: 50px;
-    font-size: 60px;
+    /* margin-bottom: 106px; */
+    margin-bottom: 80px;
 }
 
 .offer h2 {
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 
-.offer p {
-    margin: 20px 150px 40px;
-    font-size: 20px;
+.offer .check-img {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 63px;
+    /* padding: 10px 50px 10px 50px; */
+}
+
+.offer .check-img img {
+    margin-right: 15px;
+}
+
+.offer-photo img {
+    position: absolute;
+    top: 20vh;
+    right: 5%;
+    width: 30%;
+
 }
 
 /* End Offer Section */
@@ -113,7 +152,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 80vh;
-    top: 150vh;
+    top: 160vh;
     left: 0;
     box-shadow: 0px 0px 15px 0px rgb(117, 116, 116);
     z-index: 2;
@@ -122,22 +161,16 @@ nav {
 
 .contact h1 {
     width: 100%;
-    margin-top: 40px;
     text-align: center;
-    font-size: 60px;
 }
 
-.contact p {
-    font-size: 20px;
-}
-
-.contact i {
-    margin-right: 10px;
+.contact h2 {
+    margin-bottom: 45px;
 }
 
 .info-wrapper {
-    top: 35vh;
-    right: 5vw;
+    top: 32vh;
+    right: 15vw;
 }
 
 .info-wrapper,
@@ -147,14 +180,63 @@ form {
 
 form {
     display: flex;
+    top: 33vh;
     flex-direction: column;
     width: 30%;
-    top: 35vh;
-    left: 5vw;
+    left: 10vw;
 }
 
-.info-wrapper p {
-    margin-top: 15px;
+form button {
+    width: 20%;
+    margin-top: 10px;
+    align-self: center;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Open sans';
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    text-decoration: underline;
+}
+
+input {
+    height: 25px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    padding-left: 3px;
+    font-family: 'open sans condensed';
+    font-size: 15px;
+    color: #000;
+
+}
+
+.contact-img {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.contact-img img {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.contact-img span {
+    font-size: 18px;
 }
 
 /* End Contact Section */
@@ -162,7 +244,7 @@ form {
 /* Footer Section */
 footer {
     position: absolute;
-    top: 230%;
+    top: 250%;
     left: 0;
     width: 100%;
     padding: 10px 0;
@@ -171,5 +253,6 @@ footer {
     text-align: center;
     z-index: 2;
 }
+
 
 /* End Footer Section */
