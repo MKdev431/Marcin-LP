@@ -137,12 +137,8 @@ nav {
     margin-right: 15px;
 }
 
-.offer-photo img {
-    position: absolute;
-    top: 20vh;
-    right: 5%;
-    width: 30%;
-
+.offer span {
+    font-size: 18px;
 }
 
 /* End Offer Section */
@@ -170,7 +166,7 @@ nav {
 
 .info-wrapper {
     top: 32vh;
-    right: 15vw;
+    right: 10vw;
 }
 
 .info-wrapper,
