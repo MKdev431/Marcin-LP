@@ -1,4 +1,4 @@
-jQuery(function($){
+$(function($){
     var $navbar = $('nav');
     $(window).scroll(function(event){
         var $current = $(this).scrollTop();
@@ -7,6 +7,12 @@ jQuery(function($){
         } else{
             $navbar.removeClass('nav-bgc');
         }
-    });
-});
+    })
+})
 
+$('button').on('click', function() {
+    const goToSection = '[data-section=' + $(this).attr('class') + ']';
+    $('body, html').animate({
+        scrollTop: $(goToSection).offset().top
+    })
+})
