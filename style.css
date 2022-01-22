@@ -8,11 +8,6 @@ body {
     font-family: 'Open sans', sans-serif;
 }
 
-.wrapper {
-    /* max-width: 1600px; */
-    margin: 0 auto;
-}
-
 p,
 span {
     font-size: 16px;
@@ -70,14 +65,15 @@ nav {
 
 .buttons {
     position: absolute;
-    left: 3%;
     top: 50%;
+    left: 3%;
     transform: translateY(-50%);
 }
 
 .buttons button {
     margin: 10px 10px;
     padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     background-color: transparent;
@@ -85,7 +81,6 @@ nav {
     border-style: none;
     color: #fff;
     transition: 0.3s;
-    border-bottom: 1px solid transparent;
 }
 
 .buttons button:hover {
