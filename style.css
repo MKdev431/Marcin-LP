@@ -90,6 +90,11 @@ nav {
     color: #eee;
 }
 
+.hamburger {
+    display: none;
+    color: #fff;
+}
+
 /* End Header Section */
 
 /* Offer Section */
@@ -380,6 +385,25 @@ footer {
         z-index: 3;
         background-color: rgb(0, 0, 0);
         transition: .3s;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: -150%;
+        right: 5%;
+        z-index: 4;
+        width: 10%;
+        background-color: #fff;
+
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after,
+    .hamburger .hamburger--arrowalt-r .is-active {
+        background-color: #fff;
+        color: #fff;
     }
 
     .phone {
