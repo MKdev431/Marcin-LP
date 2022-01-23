@@ -60,10 +60,11 @@
                     <img src="img/fb.png" alt="adres facebook"><span>fb.com/mktransporter</span></img>
                 </div>
             </div>
-            <form action="">
-                <input type="text" placeholder="Imię i nazwisko">
-                <input type="text" placeholder="Numer telefonu">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Twoja wiadomość"></textarea>
+            <form action="mailform/sendmail.php" method="post">
+                <input name="name" type="text" placeholder="Imię i nazwisko" required>
+                <input name="phone" type="text" placeholder="Numer telefonu" required>
+                <input name="email" type="text" placeholder="Adres email" required>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Twoja wiadomość" required></textarea>
                 <button>Wyślij</button>
             </form>
         </section>
