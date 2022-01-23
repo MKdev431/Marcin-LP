@@ -244,7 +244,18 @@ footer {
 
 /* End Footer Section */
 
-@media (max-width: 1024px) {
+/* Media Queries  */
+@media (min-height: 1000px) {
+    .offer h1 {
+        margin-top: 200px;
+    }
+
+    .contact h1 {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 1025px) {
 
     p,
     span {
@@ -271,5 +282,81 @@ footer {
 
     .offer {
         background-size: 40%;
+    }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+    .offer h1,
+    .offer h2,
+    .offer p {
+        margin-inline: auto;
+    }
+
+    .check-img {
+        padding-left: 180px;
+    }
+
+    .offer {
+        background-position: 50% 60%;
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .offer {
+        background-image: none;
+    }
+
+    .offer h1,
+    .offer h2,
+    .offer p {
+        width: 90%;
+    }
+
+    .offer h2 {
+        margin-top: 40px;
+    }
+
+    .buttons button {
+        border-bottom: none;
+        margin-block: 0;
+    }
+
+    .buttons button:hover {
+        color: #fff;
+    }
+
+    .offer h1 {
+        margin-top: 30px;
+    }
+
+    .contact h1 {
+        margin-top: 50px;
+    }
+
+    .contact form,
+    .contact h2 {
+        display: none;
+    }
+
+    .info-wrapper {
+        display: flex;
+        width: 100%;
+        right: 0;
+    }
+
+    .contact-img {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .contact-img img {
+        margin-right: 0;
+    }
+
+    .contact span {
+        margin-top: 10px;
     }
 }
