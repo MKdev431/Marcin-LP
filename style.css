@@ -54,12 +54,14 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
-
 }
 
-.phone i,
+.phone i {
+    padding-right: 15px;
+}
+
 .phone p {
-    margin-right: 25px;
+    margin-right: 10px;
     font-size: 18px;
 }
 
