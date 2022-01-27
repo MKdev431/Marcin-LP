@@ -16,3 +16,8 @@ $('.buttons button').on('click', function() {
         scrollTop: $(goToSection).offset().top
     })
 })
+
+$('.hamburger, .buttons button').on('click', function () {
+    $('.fa-bars, .fa-arrow-right, .mobile').toggleClass('active')
+})
+

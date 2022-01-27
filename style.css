@@ -398,11 +398,41 @@ footer {
         top: 0;
         left: auto;
         right: 0;
-        width: -;
+        width: 0;
         height: 100%;
         z-index: 3;
         background-color: rgb(0, 0, 0);
         transition: .3s;
+    }
+
+    .mobile.active {
+        width: 50%;
+    }
+
+    .hamburger {
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .fa-bars,
+    .fa-arrow-right {
+        display: none;
+        position: absolute;
+    }
+
+    .fa-bars.active {
+        display: block;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .8);
+        padding: 20px;
+        border-radius: 0 0 0 30%;
+    }
+
+    .fa-arrow-right.active {
+        display: block;
+        top: 3vh;
+        left: 3vh;
     }
 
     .buttons {
@@ -422,7 +452,7 @@ footer {
         background-color: transparent;
         cursor: pointer;
         color: #fff;
-        transition: 0.3s;
+        transition: .3s;
         text-transform: uppercase;
     }
 
