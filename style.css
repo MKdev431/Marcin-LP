@@ -33,6 +33,15 @@ header {
 
 }
 
+.logo img {
+    position: absolute;
+    top: 15vh;
+    left: 5vh;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -90,11 +99,6 @@ nav {
     color: #eee;
 }
 
-.hamburger {
-    display: none;
-    color: #fff;
-}
-
 /* End Header Section */
 
 /* Offer Section */
@@ -125,7 +129,8 @@ nav {
 }
 
 .offer h1 {
-    margin-top: 70px;
+    margin-top: 110px;
+    margin-bottom: 80px;
 }
 
 .offer h2 {
@@ -329,8 +334,12 @@ footer {
         width: 90%;
     }
 
+    .offer h1 {
+        margin-bottom: 30px;
+    }
+
     .offer h2 {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .buttons button {
@@ -380,30 +389,11 @@ footer {
         top: 0;
         left: auto;
         right: 0;
-        width: 70%;
+        width: 0;
         height: 100%;
         z-index: 3;
         background-color: rgb(0, 0, 0);
         transition: .3s;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: -150%;
-        right: 5%;
-        z-index: 4;
-        width: 10%;
-        background-color: #fff;
-
-    }
-
-    .hamburger-inner,
-    .hamburger-inner::before,
-    .hamburger-inner::after,
-    .hamburger .hamburger--arrowalt-r .is-active {
-        background-color: #fff;
-        color: #fff;
     }
 
     .phone {
