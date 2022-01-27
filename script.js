@@ -1,5 +1,5 @@
 $(function($){
-    var $navbar = $('nav');
+    var $navbar = $('.desktop');
     $(window).scroll(function(event){
         var $current = $(this).scrollTop();
         if( $current > 0 ){
@@ -10,7 +10,7 @@ $(function($){
     })
 })
 
-$('button').on('click', function() {
+$('.buttons button').on('click', function() {
     const goToSection = '[data-section=' + $(this).attr('class') + ']';
     $('body, html').animate({
         scrollTop: $(goToSection).offset().top
