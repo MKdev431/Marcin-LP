@@ -38,8 +38,9 @@ header {
     top: 15vh;
     left: 5vh;
     width: 20%;
-    border: 1px solid black;
-    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10%;
+
 }
 
 nav {
@@ -143,15 +144,13 @@ nav {
 }
 
 .offer .check-img {
-    display: flex;
-    margin-left: 28px;
-    align-items: center;
-    text-align: left;
+    padding-left: 0;
 }
 
 .offer .check-img img {
-    width: 3%;
+    width: 30%;
     margin-right: 15px;
+    padding-left: 0;
 }
 
 /* End Offer Section */
@@ -389,6 +388,8 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    /* MENU  */
     .desktop {
         display: none;
     }
@@ -456,7 +457,92 @@ footer {
         text-transform: uppercase;
     }
 
-    .info-wrapper {
-        display: none;
+    /* MENU END */
+    header {
+        background-image: url(img/IMG20220116122456_minit.png);
+        background-position: 60%;
     }
+
+    .logo img {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        border-style: none;
+        border-radius: 0;
+        background-color: transparent;
+
+    }
+
+    /* OFFER */
+    .offer {
+        width: 100%;
+        top: 80vh;
+        padding-top: 20px;
+    }
+
+    .offer h1,
+    .offer h2,
+    .offer p {
+        width: 80%;
+    }
+
+    .offer p,
+    .offer span {
+        font-size: 12px;
+    }
+
+    .offer .check-img {
+        display: flex;
+        margin-left: 5%;
+    }
+
+    .offer .check-img img {
+        width: 5%;
+        margin-right: 5px;
+    }
+
+    /* OFFER END */
+
+    /* CONTACT */
+    .contact {
+        top: 174vh;
+        height: 97vh;
+        align-content: center;
+    }
+
+    .info-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 30%;
+        top: 35vh;
+    }
+
+    .contact-img {
+        display: flex;
+        align-items: start;
+        margin-left: 20%;
+
+    }
+
+    .contact h1 {
+        /* margin: 0; */
+    }
+
+    /* CONTACT END */
+
+    /* FOOTER */
+    footer {
+        top: 267vh;
+        font-size: 12px;
+
+
+    }
+
+    footer p {
+        width: 85%;
+        margin-inline: auto;
+    }
+
+    /* FOOTER END */
 }
