@@ -163,7 +163,7 @@ nav {
 .contact {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 98vh;
     top: 160vh;
     left: 0;
     z-index: 1;
@@ -258,7 +258,7 @@ textarea::placeholder {
 /* Footer Section */
 footer {
     position: absolute;
-    top: 260vh;
+    top: 256vh;
     left: 0;
     width: 100%;
     padding: 5px 0;
