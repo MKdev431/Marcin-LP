@@ -144,11 +144,15 @@ nav {
 }
 
 .offer .check-img {
-    padding-left: 0;
+    display: flex;
+    width: 80%;
+    margin-left: 28px;
+    align-items: center;
+    text-align: left;
 }
 
 .offer .check-img img {
-    width: 30%;
+    width: 3%;
     margin-right: 15px;
     padding-left: 0;
 }
@@ -494,7 +498,8 @@ footer {
 
     .offer .check-img {
         display: flex;
-        margin-left: 5%;
+        margin-left: 10%;
+        padding: 0;
     }
 
     .offer .check-img img {
