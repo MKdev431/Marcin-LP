@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Transporter</title>
+    <script src="https://kit.fontawesome.com/4f0e6ff939.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body class="page">
+    <div class="page__wrapper">
+
+        <header class="header page__header">
+            <div class="header__logo-container">
+                <img src="img/logo_mk_przezr.png" alt="Logo firmy" class="header__logo">
+            </div>
+            <nav class="nav-desktop header__nav">
+                <ul class="nav-desktop__list">
+                    <button class="nav-desktop__home-btn | home-btn">Strona Główna</button>
+                    <button class="nav-desktop__offer-btn | offer-btn">Oferta</button>
+                    <button class="nav-desktop__contact-btn | contact-btn">Kontakt</button>
+                </ul>
+                <div class="nav-desktop__phone">
+                    <a href="tel:+48503060624" class="nav-desktop__phone-number"><i class="nav-desktop__phone-icon | fas fa-phone-square-alt"></i><span class="nav-desktop__phone-text | text">+48 503 060 624</span></a>
+                </div>
+            </nav>
+            <nav class="nav-mobile header__nav">
+                <ul class="nav-mobile__list">
+                    <button class="nav-mobile__home-btn | home-btn">Strona Główna</button>
+                    <button class="nav-mobile__offer-btn | offer-btn">Oferta</button>
+                    <button class="nav-mobile__contact-btn | contact-btn">Kontakt</button>
+                </ul>
+                <div class="hamburger nav-mobile__hamburger">
+                    <i class="hamburger__icon-bars | fas fa-bars active"></i>
+                    <i class="hamburger__icon-arrow | fas fa-arrow-right"></i>
+                </div>
+                <div class="nav-mobile__up-top-arrow-container">
+                    <i class="nav-mobile__up-top-arrow | fas fa-arrow-circle-up"></i>
+                </div>
+            </nav>
+        </header>
+
+        <section class="offer page__offer">
+            <h1 class="offer__title | section-title">Nasza Oferta</h1>
+            <h2 class="offer__sub-title | section-sub-title">Transport Międzynarodowy i Krajowy 3,5t</h2>
+            <p class="offer__text | text">Oferujemy międzynarodowy przewóz ładunków samochodem dostawczym o DMC 3,5t -
+                Kierunek Europa Zachodnia.</p>
+            <h2 class="offer__sub-title section-sub-title">Wymiary załadunkowe samochodu:</h2>
+            <ul class="offer__services-list">
+                <li class="offer__services-item"><img src="img/check.png" alt=""
+                        class="offer__services-img"><span class="offer__services-text | text">10-cio paletowy - plandeka (firanka)</span></img>
+                </li>
+                <li class="offer__services-item"><img src="img/check.png" alt=""
+                        class="offer__services-img"><span class="offer__services-text | text">4,8m długość | 2,2m szerokość | 2,5m wysokość</span></img>
+                </li>
+                <li class="offer__services-item"><img src="img/check.png" alt=""
+                        class="offer__services-img"><span class="offer__services-text | text">Przyjmujemy zarówno stałe jak i jednorazowe zlecenia.</span></img>
+                </li>
+            </ul>
+        </section>
+
+        <section class="contact page__contact">
+            <h1 class="contact__title">Kontakt</h1>
+            <div class="contact__info-wrapper">
+                <h2 class="contact__sub-title">Skontaktuj się z nami:</h2>
+                <ul class="contact__info-list">
+                    <li class="contact__info-item">
+                        <a href="tel:+48503060624" class="contact__info-link"><img src="img/tel.png" alt="numer telefonu" class="contact__info-image"><span class="contact__info-text | text">503 060 624</span></img></a>
+                    </li>
+                    <li class="contact__info-item">
+                        <a href="mailto:freestyle.431@hotmail.com" class="contact__info-link"><img src="img/mail.png" alt="adres email" class="contact__info-image"><span class="contact__info-text | text">mktransporter@mail.pl</span></img></a>
+                    </li>
+                    <li class="contact__info-item">
+                        <a href="http://facebook.pl/kurekmotorsport" class="contact__info-link"><img src="img/fb.png" alt="adres facebook" class="contact__info-image"><span class="contact__info-text | text">fb.pl/mktransporter</span></img></a>
+                    </li>
+                </ul>
+            </div>
+            <form action="mailform/sendmail.php" method="post" class="contact__form">
+                <input name="name" type="text" placeholder="Imię i nazwisko" required class="contact__form-input">
+                <input name="phone" type="text" placeholder="Numer telefonu" required class="contact__form-input">
+                <input name="email" type="text" placeholder="Adres email" required class="contact__form-input">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Twoja wiadomość" required
+                    class="contact__form-textarea"></textarea>
+                <button class="contact__form-button">Wyślij</button>
+            </form>
+        </section>
+
+        <footer class="footer page__footer">
+            <p class="footer__text | text">&copy; MK Transporter 2022 - All Rights Reserved | Created by Michał
+                Kurek</p>
+        </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
