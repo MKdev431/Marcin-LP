@@ -1,11 +1,11 @@
 $(function($){
-    var $navbar = $('.desktop');
+    var $navbar = $('.nav-desktop');
     $(window).scroll(function(event){
         var $current = $(this).scrollTop();
         if( $current > 0 ){
-            $navbar.addClass('nav-bgc');
+            $navbar.addClass('nav-desktop--dark');
         } else{
-            $navbar.removeClass('nav-bgc');
+            $navbar.removeClass('nav-desktop--dark');
         }
     })
 })

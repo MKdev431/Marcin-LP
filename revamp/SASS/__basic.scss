@@ -25,4 +25,16 @@
         text-align: center;
         margin-bottom: 10px;
     }
+
+    @media(min-width: 1024px) {
+        padding-inline: 100px;
+
+        &__title {
+            margin-bottom: 100px;
+        }
+
+        &__sub-title {
+            margin-bottom: 20px;
+        }
+    }
 }
