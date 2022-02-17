@@ -277,7 +277,7 @@
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        background-image: url(/img/background-img2.jpg);
+        background-image: url(../img/background-img2.jpg);
         background-repeat: no-repeat;
         background-size: 45%;
         background-position: 93% 60%;
@@ -410,6 +410,12 @@
     }
 
     @media(min-width: 1920px) {
+        &__info-list {
+            display: flex;
+            position: absolute;
+            top: 55%;
+            right: 5%;
+        }
 
         &__form-input,
         &__form-textarea {

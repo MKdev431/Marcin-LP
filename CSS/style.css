@@ -384,7 +384,7 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     text-align: center;
-    background-image: url(/img/background-img2.jpg);
+    background-image: url(../img/background-img2.jpg);
     background-repeat: no-repeat;
     background-size: 45%;
     background-position: 93% 60%;
@@ -537,6 +537,14 @@
 }
 
 @media (min-width: 1920px) {
+  .contact__info-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+  }
   .contact__form-input, .contact__form-textarea {
     margin-bottom: 15px;
     border-radius: 5px;
